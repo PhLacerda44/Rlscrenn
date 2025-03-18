@@ -1,62 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Lixo Car</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>RLscreen - Lixeiras para Carro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>RLscreen</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>RLscreen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <div class="container">
-        <!-- Três Retângulos Médios -->
-        <div class="retangulos">
-            <div class="retangulo"></div>
-            <div class="retangulo"></div>
-            <div class="retangulo"></div>
-        </div>
 
-        <a href="#produtos" class="button">Confira nossos produtos</a>
-    </div>
+    <main>
+        <section class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="lixeira1.jpg" alt="Lixeira Modelo 1">
+                    <h3>Lixeira Modelo 1</h3>
+                    <p>Descrição da lixeira 1.  Material resistente, design elegante.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="lixeira2.jpg" alt="Lixeira Modelo 2">
+                    <h3>Lixeira Modelo 2</h3>
+                    <p>Descrição da lixeira 2.  Compacta e prática.</p>
+                    <button>Comprar</button>
+                </div>
+                 <div class="carousel-item">
+                    <img src="lixeira3.jpg" alt="Lixeira Modelo 3">
+                    <h3>Lixeira Modelo 3</h3>
+                    <p>Descrição da lixeira 2.  Com varios compartimentos.</p>
+                    <button>Comprar</button>
+                </div>
 
-    <!-- Seção 3D -->
-    <div class="container-3d">
-        <div class="card-3d">
-            <h2>Efeito 3D Aqui!</h2>
-        </div>
-    </div>
+                </div>
 
-    <!-- Seção de Produtos -->
-    <section id="produtos" class="produtos-grid">
-        <div class="produto">
-            <img src="produto1.jpg" alt="Produto 1">
-            <h3>Produto 1</h3>
-            <p>Descrição breve do produto.</p>
-        </div>
-        <div class="produto">
-            <img src="produto2.jpg" alt="Produto 2">
-            <h3>Produto 2</h3>
-            <p>Descrição breve do produto.</p>
-        </div>
-        <div class="produto">
-            <img src="produto3.jpg" alt="Produto 3">
-            <h3>Produto 3</h3>
-            <p>Descrição breve do produto.</p>
-        </div>
-    </section>
+            </div>
+            <button class="prev-button" aria-label="Slide anterior">‹</button>
+            <button class="next-button" aria-label="Próximo slide">›</button>
+
+        </section>
+
+        <section class="call-to-action">
+          <div class="container">
+            <button>Confira nossos produtos</button>
+          </div>
+
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Loja de Lixo Car. Todos os direitos reservados.</p>
+      <div class="container">
+         <p>© 2023 RLscreen. Todos os direitos reservados.</p>
+      </div>
+
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
